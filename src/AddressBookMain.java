@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class AddressBookMain {
+    private static String firstname="";
+    private static String lastname="";
+    private static String email ="";
+    private static String address="";
+    private static int number;
+
 
 
     public static void main(String[] args) {
@@ -17,9 +23,8 @@ public class AddressBookMain {
                         createContact();
                     }
                     break;
-
-
-
+                case 2:
+                    editContact();
             }
 
         }
@@ -40,5 +45,13 @@ public class AddressBookMain {
 
 
     }
+    public static void editContact(){
+        Scanner sc = new Scanner(System.in);
+        String editname = sc.next();
+        if (firstname.equals(editname))
+            System.out.println(editname);
+        else
+            System.out.println(firstname);
+         }
 }
 
