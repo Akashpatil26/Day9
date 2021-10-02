@@ -25,6 +25,10 @@ public class AddressBookMain {
                     break;
                 case 2:
                     editContact();
+                    break;
+                case 3:
+                    deleteContact();
+                    break;
             }
 
         }
@@ -52,6 +56,8 @@ public class AddressBookMain {
             System.out.println(editname);
         else
             System.out.println(firstName);
+
+
 
     }
     public static void deleteContact(){
