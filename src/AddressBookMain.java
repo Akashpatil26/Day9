@@ -8,7 +8,23 @@ public class AddressBookMain {
         System.out.println(" 1. Add contact. ");
         System.out.println(" 2. Edit contact. ");
         System.out.println(" 3. Delete Contact. ");
+        Scanner sc = new Scanner(System.in);
+        int menu = sc.nextInt();
+        while (menu!=0){
+            switch (menu){
+                case 1:
+                    while (menu!=2){
+                        createContact();
+                    }
+                    break;
+
+
+
+            }
+
+        }
     }
+
     public static void createContact(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter First Name: ");
