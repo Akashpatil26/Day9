@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class AddressBookMain {
-    public static String firstName="";
-    public static String lastName="";
-    public static String email ="";
-    public static String address="";
-    public static int number;
+    private static String firstname="";
+    private static String lastname="";
+    private static String email ="";
+    private static String address="";
+    private static int number;
 
 
 
@@ -48,18 +48,16 @@ public class AddressBookMain {
     public static void editContact(){
         Scanner sc = new Scanner(System.in);
         String editname = sc.next();
-        if (firstName.equals(editname))
+        if (firstname.equals(editname))
             System.out.println(editname);
         else
-            System.out.println(firstName);
+            System.out.println(firstname);
 
     }
     public static void deleteContact(){
         Scanner scanner = new Scanner(System.in);
         String delete = scanner.next();
-        System.out.println("Enter name to be deleted :"+delete);
-
-
+        
 
     }
 
